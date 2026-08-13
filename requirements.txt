@@ -1,11 +1,29 @@
-opencv-python>=4.8
-numpy>=1.24
-ultralytics>=8.0
+# ===== 核心视觉库 =====
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# ===== 深度学习 =====
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0        # YOLOv8
+
+# ===== AI Agent =====
+# 项目基于 LangChain 1.x（langchain_classic / langchain_core 1.x）
 langchain-core>=1.0
 langchain-classic>=1.0
 langchain-openai>=1.0
 pydantic>=2.0
-gradio>=4.0
-openpyxl>=3.1
-# 可选：Halcon 亚像素测量（未安装时自动降级 OpenCV）
-# halcon
+
+# ===== 可视化界面 =====
+gradio>=4.16.0
+
+# ===== 数据处理 =====
+numpy>=1.24.0
+pandas>=2.0.0
+openpyxl>=3.1.0           # Excel 报表
+
+# ===== 可选（有硬件再装） =====
+# open3d>=0.17.0           # 3D 点云（项目二用）
+# halcon                   # Halcon（需要授权，非 pip 安装）
+# langchain-ollama         # 本地大模型接入
+
